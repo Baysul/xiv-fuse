@@ -1,11 +1,8 @@
 # xiv-fuse
-<img align="right" src="https://github.com/WorkingRobot/EXDViewer/blob/main/viewer/assets/icon.png?raw=true" width="20%">
 
-[![Native Build](https://img.shields.io/github/actions/workflow/status/WorkingRobot/EXDViewer/build-native.yml?style=for-the-badge&label=Native%20Build
-)](https://github.com/WorkingRobot/EXDViewer/releases)
-[![Web Build](https://img.shields.io/github/actions/workflow/status/WorkingRobot/EXDViewer/build-web.yml?style=for-the-badge&label=Web%20Build
-)](https://github.com/WorkingRobot/EXDViewer/pkgs/container/exdviewer-web)
-[![License](https://img.shields.io/github/license/WorkingRobot/EXDViewer?style=for-the-badge&)](/LICENSE)
+[![Build](https://img.shields.io/github/actions/workflow/status/WorkingRobot/xiv-fuse/build.yml?style=for-the-badge&label=Build
+)](https://github.com/WorkingRobot/xiv-fuse/actions/workflows/build.yml)
+[![License](https://img.shields.io/github/license/WorkingRobot/xiv-fuse?style=for-the-badge&)](/LICENSE)
 [![FFXIV Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fexd.camora.dev%2Fapi%2Fglobal%2Fversions&query=latest&style=for-the-badge&label=Latest%20XIV%20Version
 )](https://thaliak.xiv.dev/repository/4e9a232b)
 

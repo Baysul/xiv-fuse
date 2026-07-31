@@ -3,6 +3,7 @@ name = "xiv-fuse"
 version = "0.1.0"
 authors = ["Asriel Camora <asriel@camora.dev>"]
 repository = "https://github.com/WorkingRobot/xiv-fuse"
+license = "GPL-3.0"
 edition = "2024"
 
 [dependencies]
