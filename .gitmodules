@@ -1,0 +1,3 @@
+[submodule "deps/ffxiv-downloader"]
+	path = deps/ffxiv-downloader
+	url = https://github.com/WorkingRobot/ffxiv-downloader.git

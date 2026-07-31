@@ -1,0 +1,32 @@
+[package]
+name = "xiv-fuse"
+version = "0.1.0"
+authors = ["Asriel Camora <asriel@camora.dev>"]
+repository = "https://github.com/WorkingRobot/xiv-fuse"
+edition = "2024"
+
+[dependencies]
+xiv-dl-cache = "*"
+xiv-dl-core = "*"
+fuser = { version = "0.18", default-features = false }
+libc = "0.2"
+tokio = { version = "1", features = [
+    "rt-multi-thread",
+    "macros",
+    "sync",
+    "time",
+] }
+dashmap = "6"
+moka = { version = "0.12", features = ["future"] }
+anyhow = "1"
+log = "0.4"
+env_logger = "0.11"
+clap = { version = "4", features = ["derive"] }
+shadow-rs = { version = "2", default-features = false }
+
+[build-dependencies]
+shadow-rs = "2"
+
+[patch.crates-io]
+xiv-dl-cache = { path = "deps/ffxiv-downloader/rust/cache" }
+xiv-dl-core = { path = "deps/ffxiv-downloader/rust/core" }
