@@ -76,6 +76,7 @@ xiv-fuse [OPTIONS] <MOUNTPOINT>
   --cache-size <GIB>   Ceiling on that cache; sparse, not reserved [default: 10]
   --clut-cache <MIB>   RAM budget for parsed CLUTs [default: 512]
   --clut-path <URL>    Base URL to fetch .clut files from, as <base>/<repo>/<version>.clut
+  --index-path <PATH>  Directory or base URL of the patch index [default: WorkingRobot/ffxiv-patches]
   -h, --help           Print help
   -V, --version        Print version
 ```

@@ -48,6 +48,12 @@ struct Args {
     #[arg(long, value_name = "URL")]
     clut_path: Option<String>,
 
+    /// Directory or base URL holding the patch index (`repositories.json` and
+    /// `repos/<slug>.json`), in place of WorkingRobot/ffxiv-patches. Point this at
+    /// a fork or local checkout when the published index is stale.
+    #[arg(long, value_name = "PATH")]
+    index_path: Option<String>,
+
     /// Let other users access the mount (needs `user_allow_other` in fuse.conf).
     #[arg(long)]
     allow_other: bool,
@@ -139,6 +145,9 @@ fn main() -> anyhow::Result<()> {
         .clut_ram_bytes(args.clut_cache << 20);
     if let Some(path) = &args.clut_path {
         builder = builder.clut_path(path.clone());
+    }
+    if let Some(path) = &args.index_path {
+        builder = builder.index_path(path.clone());
     }
     let server = rt.block_on(builder.build())?;
     let server_handle = server.clone();
